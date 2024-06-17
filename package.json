@@ -1,6 +1,6 @@
 {
   "name": "@ffprobe-installer/ffprobe",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "main": "index.js",
   "scripts": {
     "lint": "xo",
@@ -28,7 +28,7 @@
     "@ffprobe-installer/linux-arm": "5.2.0",
     "@ffprobe-installer/linux-arm64": "5.2.0",
     "@ffprobe-installer/linux-ia32": "5.2.0",
-    "@ffprobe-installer/linux-x64": "git+https://github.com/college-africa/ffprobe-linux-x64.git",
+    "@ffprobe-installer/linux-x64": "5.2.0",
     "@ffprobe-installer/win32-ia32": "5.1.0",
     "@ffprobe-installer/win32-x64": "5.1.0"
   },

@@ -17,10 +17,10 @@ if (!require('./package.json').optionalDependencies[packageName]) {
 const binary = platform === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
 const nativeffProbePath = exec('which ffprobe &2>/dev/null ').toString().trim();
-console.info({ nativeffProbePath });
 
 const ffprobePath =
   nativeffProbePath || require.resolve(`${packageName}/${binary}`);
+
 if (!verifyFile(ffprobePath)) {
   throw new Error(`Could not find ffprobe executable, tried "${ffprobePath}"`);
 }
